@@ -19,6 +19,8 @@ def allowed_file(filename):
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
 def upload_file():
+    if request.method == 'GET':
+        return render_template('index.html')
     if request.method == 'POST':
         # check if the post request has the file part
         if 'file' not in request.files:
@@ -30,9 +32,9 @@ def upload_file():
         if file.filename == '':
             flash('No selected file')
             return redirect(request.url)
-        # if file != allowed_file(file.filename):
-        #     flash('file not allowed')
-            # return redirect(request.url)
+        if file != allowed_file(file.filename):
+            flash('File not allowed!')
+            return redirect(request.url)
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
