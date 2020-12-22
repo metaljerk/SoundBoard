@@ -10,6 +10,8 @@ app.config.from_object('config')
 UPLOAD_FOLDER = './static/uploads'
 ALLOWED_EXTENSIONS = {'mp4', 'mp3', 'wav'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['MAX_CONTENT_LENGTH'] = 25 * 1024 * 1024    # 25 Mb limit
+
 
 
 def allowed_file(filename):
@@ -32,7 +34,7 @@ def upload_file():
         if file.filename == '':
             flash('No selected file')
             return redirect(request.url)
-        if file != allowed_file(file.filename):
+        if file and not allowed_file(file.filename):
             flash('File not allowed!')
             return redirect(request.url)
         if file and allowed_file(file.filename):
@@ -46,6 +48,11 @@ def upload_file():
 def uploaded_file(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'],
                                filename)
+
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    if request.method == 'GET':
+        return render_template('register.html')
 
 if __name__ == "__main__":
     app.secret_key = os.urandom(24)
