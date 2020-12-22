@@ -17,4 +17,9 @@
     <input type=file name=file>
     <input type=submit value=Upload>
 </form>
+<button onclick="document.getElementById('myTune').play()">Play Sound</button>
+<button onclick="document.getElementById('myTune').pause()">Pause Sound</button>
+<audio id="myTune">
+  <source src="sound.mp4">
+</audio>
 {% endblock %}
