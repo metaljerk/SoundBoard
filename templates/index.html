@@ -14,12 +14,22 @@
 <title>Upload new File</title>
 <h1>Upload new File</h1>
 <form method=post enctype=multipart/form-data>
-    <input type=file name=file>
-    <input type=submit value=Upload>
+<input type=file name=file>
+<input type=submit value=Upload>
 </form>
-<button onclick="document.getElementById('myTune').play()">Play Sound</button>
-<button onclick="document.getElementById('myTune').pause()">Pause Sound</button>
-<audio id="myTune">
-  <source src="uploads/sample-mp4-file.mp4">
+<br>
+<img src="uploads/attackontitan.jpg" width=250 height=250>
+<img src="uploads/knightsofsidonia.jpg" width=250 height=250>
+<br>
+<button onclick="document.getElementById('attackontitan').play()">Play</button>
+<button onclick="document.getElementById('attackontitan').pause()">Pause</button>
+<audio id="attackontitan">
+<source src="uploads/attackontitan.mp4">
+<br>
+</audio>
+<button onclick="document.getElementById('knightsofsidonia').play()">Play</button>
+<button onclick="document.getElementById('knightsofsidonia').pause()">Pause</button>
+<audio id="knightsofsidonia">
+<source src="uploads/knightsofsidonia.mp3">
 </audio>
 {% endblock %}
