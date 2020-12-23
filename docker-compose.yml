@@ -16,6 +16,7 @@ services:
     scale: 1
     networks:
     - backend
+    
   webserver:
     restart: always
     build: ./nginx
