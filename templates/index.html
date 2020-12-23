@@ -19,17 +19,20 @@
 </form>
 <br>
 <!--Attack on Titan-->
+<div class="row">
 <script>
-function play(){
+function attackontitanplay(){
     var audio = document.getElementById("attackontitan");
     attackontitan.play();
                 }
-function pause(){
+function attackontitanpause(){
     var audio = document.getElementById("attackontitan");
     attackontitan.pause();
                 }
 </script>
-<img src="uploads/attackontitan.jpg" width=250 height=250 value="PLAY"  onclick="play()">
+<div class="column">
+<img src="uploads/attackontitan.jpg" width=250 height=250 value="PLAY"  onclick="ToggleAttack();">
+</div>
 <audio id="attackontitan" src="uploads/attackontitan.mp4" ></audio>
  <script>
 var attackontitan = document.getElementById("attackontitan");
@@ -43,18 +46,21 @@ function ToggleAttack() {
  <button onClick="ToggleAttack()">Play/Pause</button>
  <br>
 </audio>
- <!--Knights of Sidonia-->
+</div>
+  <!--Knights of Sidonia-->
 <script>
-function play(){
+function knightsofsidoniaplay(){
     var audio = document.getElementById("knightsofsidonia");
     knightsofsidonia.play();
                 }
-function pause(){
+function knightsofsidoniapause(){
     var audio = document.getElementById("knightsofsidonia");
     knightsofsidonia.pause();
                 }
 </script>
-<img src="uploads/knightsofsidonia.jpg" width=250 height=250 value="PLAY"  onclick="play()">
+<div class="column">
+<img src="uploads/knightsofsidonia.jpg" width=250 height=250 value="PLAY"  onclick="ToggleKnights();">
+</div>
 <audio id="knightsofsidonia" src="uploads/knightsofsidonia.mp3" ></audio>
  <script>
 var knightsofsidonia = document.getElementById("knightsofsidonia");
@@ -66,6 +72,7 @@ function ToggleKnights() {
  </audio>
  <br>
  <button onClick="ToggleKnights()">Play/Pause</button>
+</div>
+</div>
   <!--JoJo's Bizarre Adventuree-->
-
 {% endblock %}
