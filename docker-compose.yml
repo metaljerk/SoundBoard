@@ -1,0 +1,33 @@
+# Use root/example as user/password credentials
+version: '2.2'
+
+services:
+
+  soundboard:
+    build: .
+    restart: always
+    command: 
+     - gunicorn 
+     - -b 
+     - 0.0.0.0:5000 
+     - -w 5
+     - wsgi:app
+     - --timeout 30
+    scale: 1
+    networks:
+    - backend
+  webserver:
+    restart: always
+    build: ./nginx
+    container_name: webserver
+    ports:
+      - "80:80"
+    networks:
+    - backend
+  
+networks:
+  backend:
+    driver: bridge
+
+
+  
