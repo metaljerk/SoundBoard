@@ -18,18 +18,54 @@
 <input type=submit value=Upload>
 </form>
 <br>
-<img src="uploads/attackontitan.jpg" width=250 height=250>
-<img src="uploads/knightsofsidonia.jpg" width=250 height=250>
-<br>
-<button onclick="document.getElementById('attackontitan').play()">Play</button>
-<button onclick="document.getElementById('attackontitan').pause()">Pause</button>
-<audio id="attackontitan">
-<source src="uploads/attackontitan.mp4">
-<br>
+<!--Attack on Titan-->
+<script>
+function play(){
+    var audio = document.getElementById("attackontitan");
+    attackontitan.play();
+                }
+function pause(){
+    var audio = document.getElementById("attackontitan");
+    attackontitan.pause();
+                }
+</script>
+<img src="uploads/attackontitan.jpg" width=250 height=250 value="PLAY"  onclick="play()">
+<audio id="attackontitan" src="uploads/attackontitan.mp4" ></audio>
+ <script>
+var attackontitan = document.getElementById("attackontitan");
+function ToggleAttack() {
+  return attackontitan.paused ? attackontitan.play() : attackontitan.pause();
+};
+ </script>
+ <audio id="attackontitan" src="uploads/attackontitan.mp4" preload="auto">
+ </audio>
+ <br>
+ <button onClick="ToggleAttack()">Play/Pause</button>
+ <br>
 </audio>
-<button onclick="document.getElementById('knightsofsidonia').play()">Play</button>
-<button onclick="document.getElementById('knightsofsidonia').pause()">Pause</button>
-<audio id="knightsofsidonia">
-<source src="uploads/knightsofsidonia.mp3">
-</audio>
+ <!--Knights of Sidonia-->
+<script>
+function play(){
+    var audio = document.getElementById("knightsofsidonia");
+    knightsofsidonia.play();
+                }
+function pause(){
+    var audio = document.getElementById("knightsofsidonia");
+    knightsofsidonia.pause();
+                }
+</script>
+<img src="uploads/knightsofsidonia.jpg" width=250 height=250 value="PLAY"  onclick="play()">
+<audio id="knightsofsidonia" src="uploads/knightsofsidonia.mp3" ></audio>
+ <script>
+var knightsofsidonia = document.getElementById("knightsofsidonia");
+function ToggleKnights() {
+  return knightsofsidonia.paused ? knightsofsidonia.play() : knightsofsidonia.pause();
+};
+ </script>
+ <audio id="knightsofsidonia" src="uploads/knightsofsidonia.mp3" preload="auto">
+ </audio>
+ <br>
+ <button onClick="ToggleKnights()">Play/Pause</button>
+  <!--JoJo's Bizarre Adventuree-->
+
 {% endblock %}
