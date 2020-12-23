@@ -34,7 +34,7 @@ function attackontitanpause(){
                 }
 </script>
 <div class="column">
-<img src="uploads/attackontitan.jpg" width=250 height=250 value="PLAY"  onclick="ToggleAttack();">
+<img src="uploads/attackontitan.jpg" width=250 height=250 value="PLAY"  ontouchstart="ToggleAttack();">
 </div>
 <audio id="attackontitan" src="uploads/attackontitan.mp4" ></audio>
  <script>
@@ -46,7 +46,7 @@ function ToggleAttack() {
  <audio id="attackontitan" src="uploads/attackontitan.mp4" preload="auto">
  </audio>
  <br>
- <button onClick="ToggleAttack()">Play/Pause</button>
+ <button ontouchstart="ToggleAttack()">Play/Pause</button>
 </div>
   <!--Knights of Sidonia-->
 <script>
@@ -60,7 +60,7 @@ function knightsofsidoniapause(){
                 }
 </script>
 <div class="column">
-<img src="uploads/knightsofsidonia.jpg" width=250 height=250 value="PLAY"  onclick="ToggleKnights();">
+<img src="uploads/knightsofsidonia.jpg" width=250 height=250 value="PLAY"  ontouchstart="ToggleKnights();">
 </div>
 <audio id="knightsofsidonia" src="uploads/knightsofsidonia.mp4" ></audio>
  <script>
@@ -72,7 +72,7 @@ function ToggleKnights() {
  <audio id="knightsofsidonia" src="uploads/knightsofsidonia.mp4" preload="auto">
  </audio>
  <br>
- <button onClick="ToggleKnights()">Play/Pause</button>
+ <button ontouchstart="ToggleKnights()">Play/Pause</button>
 </div>
   <!--JoJo's Bizarre Adventuree-->
 {% endblock %}
