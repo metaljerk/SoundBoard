@@ -34,16 +34,16 @@ function attackontitanpause(){
                 }
 </script>
 <div class="column">
-<img src="uploads/attackontitan.jpg" width=250 height=250 value="PLAY"  ontouchstart="touchAvailable=true; ToggleAttack();" onclick="if(!touchAvailable) ToggleAttack();">
+<img src="uploads/attackontitan.jpg" width=250 height=250 value="PLAY"  playsinline ontouchstart="touchAvailable=true; ToggleAttack();" onclick="if(!touchAvailable) ToggleAttack();">
 </div>
-<audio id="attackontitan" src="uploads/attackontitan.mp4" ></audio>
+<audio id="attackontitan" src="uploads/attackontitan.mp4" playsinline></audio>
  <script>
 var attackontitan = document.getElementById("attackontitan");
 function ToggleAttack() {
   return attackontitan.paused ? attackontitan.play() : attackontitan.pause();
 };
  </script>
- <audio id="attackontitan" src="uploads/attackontitan.mp4" preload="auto">
+ <audio id="attackontitan" src="uploads/attackontitan.mp4" playsinline preload="auto">
  </audio>
  <br>
  <button ontouchstart="touchAvailable=true; ToggleAttack();" onclick="if(!touchAvailable) ToggleAttack();">Play/Pause</button>
@@ -63,14 +63,14 @@ function knightsofsidoniapause(){
 <img src="uploads/knightsofsidonia.jpg" width=250 height=250 value="PLAY"  ontouchstart="touchAvailable=true; ToggleKnights();" onclick="if(!touchAvailable) ToggleKnights();">
 
 </div>
-<audio id="knightsofsidonia" src="uploads/knightsofsidonia.mp4" ></audio>
+<audio id="knightsofsidonia" src="uploads/knightsofsidonia.mp4" playsinline></audio>
  <script>
 var knightsofsidonia = document.getElementById("knightsofsidonia");
 function ToggleKnights() {
   return knightsofsidonia.paused ? knightsofsidonia.play() : knightsofsidonia.pause();
 };
  </script>
- <audio id="knightsofsidonia" src="uploads/knightsofsidonia.mp4" preload="auto">
+ <audio id="knightsofsidonia" src="uploads/knightsofsidonia.mp4" playsinline preload="auto">
  </audio>
  <br>
  <script> touchAvailable = false; </script>
