@@ -1,3 +1,6 @@
+
+<!doctype html>
+{% extends 'base.html' %}
 {% block content %}
 {% with messages = get_flashed_messages() %}
 {% if messages %}
@@ -10,7 +13,7 @@
     {% endfor %}
 {% endif %}
 {% endwith %}
-<!doctype html>
+<body>
 <title>Upload new File</title>
 <h1>Upload new File</h1>
 <form method=post enctype=multipart/form-data>
@@ -44,8 +47,6 @@ function ToggleAttack() {
  </audio>
  <br>
  <button onClick="ToggleAttack()">Play/Pause</button>
- <br>
-</audio>
 </div>
   <!--Knights of Sidonia-->
 <script>
@@ -73,6 +74,7 @@ function ToggleKnights() {
  <br>
  <button onClick="ToggleKnights()">Play/Pause</button>
 </div>
-</div>
   <!--JoJo's Bizarre Adventuree-->
 {% endblock %}
+</body>
+</html>
