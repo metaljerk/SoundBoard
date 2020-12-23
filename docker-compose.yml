@@ -6,6 +6,7 @@ services:
   soundboard:
     build: .
     restart: always
+    container_name: soundboard
     command: 
      - gunicorn 
      - -b 
