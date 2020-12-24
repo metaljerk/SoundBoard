@@ -22,6 +22,7 @@
 <input type=submit value=Upload>
 </form> -->
 <h3>Touch an image!</h>
+<div>
 <br>
 <!--Attack on Titan-->
 <div class="row">
@@ -35,12 +36,12 @@ function attackontitanpause(){
     attackontitan.pause();
                 }
 </script>
-<div class="column">
+<div class="row">
 <img src="uploads/attackontitan.jpg" width=250 height=250 value="PLAY"  playsinline ontouchstart="touchAvailable=true; ToggleAttack();" onclick="if(!touchAvailable) ToggleAttack();">
 </div>
 <audio id="attackontitan" src="uploads/attackontitan.mp4" playsinline></audio>
  <script>
-var attackontitan = document.getElementById("attackontitan");
+var attackontitanseason4 = document.getElementById("attackontitanseason4");
 function ToggleAttack() {
   return attackontitan.paused ? attackontitan.play() : attackontitan.pause();
 };
@@ -48,8 +49,36 @@ function ToggleAttack() {
 <audio id="attackontitan" src="uploads/attackontitan.mp4" playsinline preload="auto">
 </audio>
 <button ontouchstart="touchAvailable=true; ToggleAttack();" onclick="if(!touchAvailable) ToggleAttack();">Play/Pause</button>
-</div>
-  <!--Knights of Sidonia-->
+<br>
+<br>
+<!--attack on titan season 4-->
+<div class="row">
+  <script>
+  function attackontitanseason4play(){
+      var audio = document.getElementById("attackontitanseason4");
+      attackontitanseason4.play();
+                  }
+  function attackontitanseason4pause(){
+      var audio = document.getElementById("attackontitanseason4");
+      attackontitanseason4.pause();
+                  }
+  </script>
+  <div class="column">
+  <img src="uploads/attackontitanseason4.jpg" width=250 height=250 value="PLAY"  playsinline ontouchstart="touchAvailable=true; ToggleAttackSeason4();" onclick="if(!touchAvailable) ToggleAttackSeason4();">
+  </div>
+  <audio id="attackontitanseason4" src="uploads/attackontitanseason4.mp4" playsinline></audio>
+   <script>
+  var attackontitanseason4 = document.getElementById("attackontitanseason4");
+  function ToggleAttackSeason4() {
+    return attackontitanseason4.paused ? attackontitanseason4.play() : attackontitanseason4.pause();
+  };
+  </script>
+  <audio id="attackontitanseason4" src="uploads/attackontitanseason4.mp4" playsinline preload="auto">
+  </audio>
+  <button ontouchstart="touchAvailable=true; ToggleAttackSeason4();" onclick="if(!touchAvailable) ToggleAttackSeason4();">Play/Pause</button>
+  </div>
+
+<!--Knights of Sidonia-->
 <script>
 function knightsofsidoniaplay(){
     var audio = document.getElementById("knightsofsidonia");
@@ -75,6 +104,7 @@ function ToggleKnights() {
  </audio>
  <script> touchAvailable = false; </script>
 <button ontouchstart="touchAvailable=true; ToggleKnights();" onclick="if(!touchAvailable) ToggleKnights();">Play/Pause</button>
+<br>
   <!--JoJo's Bizarre Adventuree-->
 {% endblock %}
 </body>
