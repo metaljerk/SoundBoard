@@ -107,32 +107,59 @@ function ToggleKnights() {
 <br>
 <!--JoJo's Bizarre Adventure-->
 
-  <!-- Alway's Sunny -->
+<!-- Alway's Sunny -->
 <script>
-function anothermansskinplay(){
+  function anothermansskinplay(){
     var audio = document.getElementById("anothermansskin");
     anothermansskin.play();
                 }
-function anothermansskinpause(){
+  function anothermansskinpause(){
     var audio = document.getElementById("anothermansskin");
     anothermansskin.pause();
+                }
+  </script>
+  <div class="column">
+  <br>
+  <img src="uploads/getoff.gif" width=250 height=250 value="PLAY"  ontouchstart="touchAvailable=true; ToggleGetOff();" onclick="if(!touchAvailable) ToggleGetOff();">
+  </div>
+  <audio id="anothermansskin" src="uploads/anothermansskin.mp4" playsinline></audio>
+  <script>
+  var anothermansskin = document.getElementById("anothermansskin");
+  function ToggleGetOff() {
+  return anothermansskin.paused ? anothermansskin.play() : anothermansskin.pause();
+  };
+  </script>
+  <audio id="anothermansskin" src="uploads/anothermansskin.mp4" playsinline preload="auto">
+  </audio>
+  <script> touchAvailable = false; </script>
+  <button ontouchstart="touchAvailable=true; ToggleGetOff();" onclick="if(!touchAvailable) ToggleGetOff();">Play/Pause</button>
+  <br>
+
+<script>
+function metaljerkplay(){
+    var audio = document.getElementById("metaljerk");
+    metaljerk.play();
+                }
+function metaljerkpause(){
+    var audio = document.getElementById("metaljerk");
+    metaljerk.pause();
                 }
 </script>
 <div class="column">
 <br>
-<img src="uploads/getoff.gif" width=250 height=250 value="PLAY"  ontouchstart="touchAvailable=true; ToggleGetOff();" onclick="if(!touchAvailable) ToggleGetOff();">
+<img src="uploads/metaljerk.jpg" width=250 height=250 value="PLAY"  ontouchstart="touchAvailable=true; ToggleMetalJerk();" onclick="if(!touchAvailable) ToggleMetalJerk();">
 </div>
-<audio id="anothermansskin" src="uploads/anothermansskin.mp4" playsinline></audio>
+<audio id="metaljerk" src="uploads/metaljerk.mp4" playsinline></audio>
  <script>
-var anothermansskin = document.getElementById("anothermansskin");
-function ToggleGetOff() {
-  return anothermansskin.paused ? anothermansskin.play() : anothermansskin.pause();
+var metaljerk = document.getElementById("metaljerk");
+function ToggleMetalJerk() {
+  return metaljerk.paused ? metaljerk.play() : metaljerk.pause();
 };
  </script>
- <audio id="anothermansskin" src="uploads/anothermansskin.mp4" playsinline preload="auto">
+ <audio id="metaljerk" src="uploads/metaljerk.mp4" playsinline preload="auto">
  </audio>
  <script> touchAvailable = false; </script>
-<button ontouchstart="touchAvailable=true; ToggleGetOff();" onclick="if(!touchAvailable) ToggleGetOff();">Play/Pause</button>
+<button ontouchstart="touchAvailable=true; ToggleMetalJerk();" onclick="if(!touchAvailable) ToggleMetalJerk();">Play/Pause</button>
 <br>
 {% endblock %}
 </body>
