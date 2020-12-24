@@ -14,12 +14,14 @@
 {% endif %}
 {% endwith %}
 <body>
+<!-- I'll worry about this later
 <title>Upload new File</title>
 <h1>Upload new File</h1>
 <form method=post enctype=multipart/form-data>
 <input type=file name=file>
 <input type=submit value=Upload>
-</form>
+</form> -->
+<h3>Touch an image!</h>
 <br>
 <!--Attack on Titan-->
 <div class="row">
@@ -42,11 +44,10 @@ var attackontitan = document.getElementById("attackontitan");
 function ToggleAttack() {
   return attackontitan.paused ? attackontitan.play() : attackontitan.pause();
 };
- </script>
- <audio id="attackontitan" src="uploads/attackontitan.mp4" playsinline preload="auto">
- </audio>
- <br>
- <button ontouchstart="touchAvailable=true; ToggleAttack();" onclick="if(!touchAvailable) ToggleAttack();">Play/Pause</button>
+</script>
+<audio id="attackontitan" src="uploads/attackontitan.mp4" playsinline preload="auto">
+</audio>
+<button ontouchstart="touchAvailable=true; ToggleAttack();" onclick="if(!touchAvailable) ToggleAttack();">Play/Pause</button>
 </div>
   <!--Knights of Sidonia-->
 <script>
@@ -60,8 +61,8 @@ function knightsofsidoniapause(){
                 }
 </script>
 <div class="column">
+<br>
 <img src="uploads/knightsofsidonia.jpg" width=250 height=250 value="PLAY"  ontouchstart="touchAvailable=true; ToggleKnights();" onclick="if(!touchAvailable) ToggleKnights();">
-
 </div>
 <audio id="knightsofsidonia" src="uploads/knightsofsidonia.mp4" playsinline></audio>
  <script>
@@ -72,10 +73,8 @@ function ToggleKnights() {
  </script>
  <audio id="knightsofsidonia" src="uploads/knightsofsidonia.mp4" playsinline preload="auto">
  </audio>
- <br>
  <script> touchAvailable = false; </script>
 <button ontouchstart="touchAvailable=true; ToggleKnights();" onclick="if(!touchAvailable) ToggleKnights();">Play/Pause</button>
-</div>
   <!--JoJo's Bizarre Adventuree-->
 {% endblock %}
 </body>
