@@ -105,7 +105,35 @@ function ToggleKnights() {
  <script> touchAvailable = false; </script>
 <button ontouchstart="touchAvailable=true; ToggleKnights();" onclick="if(!touchAvailable) ToggleKnights();">Play/Pause</button>
 <br>
-  <!--JoJo's Bizarre Adventuree-->
+<!--JoJo's Bizarre Adventure-->
+
+  <!-- Alway's Sunny -->
+<script>
+function anothermansskinplay(){
+    var audio = document.getElementById("anothermansskin");
+    anothermansskin.play();
+                }
+function anothermansskinpause(){
+    var audio = document.getElementById("anothermansskin");
+    anothermansskin.pause();
+                }
+</script>
+<div class="column">
+<br>
+<img src="uploads/getoff.gif" width=250 height=250 value="PLAY"  ontouchstart="touchAvailable=true; ToggleGetOff();" onclick="if(!touchAvailable) ToggleGetOff();">
+</div>
+<audio id="anothermansskin" src="uploads/anothermansskin.mp4" playsinline></audio>
+ <script>
+var anothermansskin = document.getElementById("anothermansskin");
+function ToggleGetOff() {
+  return anothermansskin.paused ? anothermansskin.play() : anothermansskin.pause();
+};
+ </script>
+ <audio id="anothermansskin" src="uploads/anothermansskin.mp4" playsinline preload="auto">
+ </audio>
+ <script> touchAvailable = false; </script>
+<button ontouchstart="touchAvailable=true; ToggleGetOff();" onclick="if(!touchAvailable) ToggleGetOff();">Play/Pause</button>
+<br>
 {% endblock %}
 </body>
 </html>
