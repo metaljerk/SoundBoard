@@ -4,7 +4,7 @@ from os.path import join, dirname, realpath
 from werkzeug.utils import secure_filename
 from flask_sqlalchemy import SQLAlchemy
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates', static_folder='static')
 db = SQLAlchemy(app)
 app.config.from_object('config')
 UPLOAD_FOLDER = './static/uploads'
