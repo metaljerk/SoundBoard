@@ -35,6 +35,11 @@ function attackontitanpause(){
     var audio = document.getElementById("attackontitan");
     attackontitan.pause();
                 }
+function attackontitanrestart(){
+    var audio = document.getElementById("attackontitan");
+    attackontitan.pause();
+    attackontitan.currentTime = 0
+                }
 </script>
 <div class="row">
 <img src="uploads/attackontitan.jpg" width=250 height=250 value="PLAY"  playsinline ontouchstart="touchAvailable=true; ToggleAttack();" onclick="if(!touchAvailable) ToggleAttack();">
@@ -45,10 +50,14 @@ var attackontitan = document.getElementById("attackontitan");
 function ToggleAttack() {
   return attackontitan.paused ? attackontitan.play() : attackontitan.pause();
 };
+function ToggleRestartAttack() {
+  return attackontitan.paused ? attackontitan.pause() : attackontitan.currentTime = 0;
+}
 </script>
 <audio id="attackontitan" src="uploads/attackontitan.mp4" playsinline preload="auto">
 </audio>
 <button ontouchstart="touchAvailable=true; ToggleAttack();" onclick="if(!touchAvailable) ToggleAttack();">Play/Pause</button>
+<button ontouchstart="touchavailable=true; ToggleRestartAttack();" onclick="if(!touchAvailable) ToggleRestartAttack();">Restart</button>
 <br>
 <br>
 <!--attack on titan season 4-->
