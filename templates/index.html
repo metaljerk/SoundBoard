@@ -106,7 +106,87 @@ function ToggleKnights() {
 <button ontouchstart="touchAvailable=true; ToggleKnights();" onclick="if(!touchAvailable) ToggleKnights();">Play/Pause</button>
 <br>
 <!--JoJo's Bizarre Adventure-->
+<!--Berserk-->
+<script>
+  function berserkfightplay(){
+      var audio = document.getElementById("berserkfight");
+      berserkfight.play();
+                  }
+  function berserkfightpause(){
+      var audio = document.getElementById("berserkfight");
+      berserkfight.pause();
+                  }
+  </script>
+  <br>
+  <img src="uploads/berserkfight.jpg" width=250 height=250 value="PLAY"  ontouchstart="touchAvailable=true; ToggleBerserkFight();" onclick="if(!touchAvailable) ToggleBerserkFight();">
+  </div>
+  <audio id="berserkfight" src="uploads/berserkfight.mp4" playsinline></audio>
+   <script>
+  var berserkfight = document.getElementById("berserkfight");
+  function ToggleBerserkFight() {
+    return berserkfight.paused ? berserkfight.play() : berserkfight.pause();
+  };
+   </script>
+   <audio id="berserkfight" src="uploads/berserkfight.mp4" playsinline preload="auto">
+   </audio>
+   <script> touchAvailable = false; </script>
+  <button ontouchstart="touchAvailable=true; ToggleBerserkFight();" onclick="if(!touchAvailable) ToggleBerserkFight();">Play/Pause</button>
+  <br>
 
+
+
+  <script>
+    function gutssoundtrackplay(){
+        var audio = document.getElementById("gutssoundtrack");
+        gutssoundtrack.play();
+                    }
+    function gutssoundtrackpause(){
+        var audio = document.getElementById("gutssoundtrack");
+        gutssoundtrack.pause();
+                    }
+    </script>
+    <br>
+    <img src="uploads/gutssoundtrack.jpg" width=250 height=250 value="PLAY"  ontouchstart="touchAvailable=true; ToggleGutsSoundtrack();" onclick="if(!touchAvailable) ToggleGutsSoundtrack();">
+    </div>
+    <audio id="gutssoundtrack" src="uploads/gutssoundtrack.mp4" playsinline></audio>
+     <script>
+    var gutssoundtrack = document.getElementById("gutssoundtrack");
+    function ToggleGutsSoundtrack() {
+      return gutssoundtrack.paused ? gutssoundtrack.play() : gutssoundtrack.pause();
+    };
+     </script>
+     <audio id="gutssoundtrack" src="uploads/gutssoundtrack.mp4" playsinline preload="auto">
+     </audio>
+     <script> touchAvailable = false; </script>
+    <button ontouchstart="touchAvailable=true; ToggleGutsSoundtrack();" onclick="if(!touchAvailable) ToggleGutsSoundtrack();">Play/Pause</button>
+    <br>
+<!--Bleach-->
+<script>
+  function bleachplay(){
+      var audio = document.getElementById("bleach");
+      bleach.play();
+                  }
+  function bleachpause(){
+      var audio = document.getElementById("bleach");
+      bleach.pause();
+                  }
+  </script>
+  <div class="column">
+  <br>
+  <img src="uploads/bleach.png" width=250 height=250 value="PLAY"  ontouchstart="touchAvailable=true; ToggleBleach();" onclick="if(!touchAvailable) ToggleBleach();">
+  </div>
+  <audio id="bleach" src="uploads/bleachtheme.mp4" playsinline></audio>
+   <script>
+  var bleach = document.getElementById("bleach");
+  function ToggleBleach() {
+    return bleach.paused ? bleach.play() : bleach.pause();
+  };
+   </script>
+   <audio id="bleach" src="uploads/bleachtheme.mp4" playsinline preload="auto">
+   </audio>
+   <script> touchAvailable = false; </script>
+  <button ontouchstart="touchAvailable=true; ToggleBleach();" onclick="if(!touchAvailable) ToggleBleach();">Play/Pause</button>
+  <br>
 <!-- Alway's Sunny -->
 <script>
   function anothermansskinplay(){
