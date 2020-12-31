@@ -275,8 +275,43 @@ function ToggleRestartKnights() {
    <script> touchAvailable = false; </script>
   <button ontouchstart="touchAvailable=true; ToggleBleach();" onclick="if(!touchAvailable) ToggleBleach();">Play/Pause</button>
   <button ontouchstart="touchavailable=true; ToggleBleachRestart();" onclick="if(!touchAvailable) ToggleBleachRestart();">Restart</button>
-
   <br>
+
+  <script>
+    function bleachhoahohplay(){
+        var audio = document.getElementById("bleachhoahoh");
+        bleachhoahoh.play();
+                    }
+    function bleachhoahohpause(){
+        var audio = document.getElementById("bleachhoahoh");
+        bleachhoahoh.pause();
+                    }
+    function bleachhoahorestart(){
+        var audio = document.getElementById("bleachhoahoh");
+        bleachhoahoh.pause();
+        bleachhoahoh.currentTime = 0
+                    }
+    </script>
+    <br>
+    <img src="uploads/bleachhoahoh.jpg" width=250 height=250 value="PLAY"  ontouchstart="touchAvailable=true; ToggleBleachHoahoh();" onclick="if(!touchAvailable) ToggleBleachHoahoh();">
+    <div class="column">	
+    <audio id="bleachhoahoh" src="uploads/bleachhoahoh.mp4" playsinline></audio>
+     <script>
+    var bleachhoahoh = document.getElementById("bleachhoahoh");
+    function ToggleBleachHoahoh() {
+      return bleachhoahoh.paused ? bleachhoahoh.play() : bleachhoahoh.pause();
+    };
+    function ToggleBleachHoahohRestart() {
+    return bleachhoahoh.paused ? bleachhoahoh.pause() : bleachhoahoh.currentTime = 0;
+  }
+     </script>
+     <audio id="bleachhoahoh" src="uploads/bleachhoahoh.mp4" playsinline preload="auto">
+     </audio>
+     <script> touchAvailable = false; </script>
+    <button ontouchstart="touchAvailable=true; ToggleBleachHoahoh();" onclick="if(!touchAvailable) ToggleBleachHoahoh();">Play/Pause</button>
+    <button ontouchstart="touchavailable=true; ToggleBleachHoahohRestart();" onclick="if(!touchAvailable) ToggleBleachHoahohRestart();">Restart</button>
+  
+    <br>
 <!-- Alway's Sunny -->
 <script>
   function anothermansskinplay(){
@@ -351,6 +386,80 @@ function ToggleMetalJerkRestart() {
 <button ontouchstart="touchavailable=true; ToggleMetalJerkRestart();" onclick="if(!touchAvailable) ToggleMetalJerkRestart();">Restart</button>
 
 <br>
+<!-- My Hero Academia -->
+<script>
+  function prominenceburnplay(){
+    var audio = document.getElementById("prominenceburn");
+    prominenceburn.play();
+                }
+  function prominenceburnpause(){
+    var audio = document.getElementById("prominenceburn");
+    prominenceburn.pause();
+                }
+  function prominenceburnnrestart(){
+      var audio = document.getElementById("prominenceburn");
+      prominenceburn.pause();
+      prominenceburn.currentTime = 0
+                  }
+  </script>
+  <br>
+  <img src="uploads/prominenceburn.jpg" width=250 height=250 value="PLAY"  ontouchstart="touchAvailable=true; TogglePprominenceBurn();" onclick="if(!touchAvailable) TogglePprominenceBurn();">
+  </div>
+   <div class="column">	
+  <audio id="prominenceburn" src="uploads/prominenceburn.mp4" playsinline></audio>
+  <script>
+  var prominenceburn = document.getElementById("prominenceburn");
+  function TogglePprominenceBurn() {
+  return prominenceburn.paused ? prominenceburn.play() : prominenceburn.pause();
+  };
+  function TogglePprominenceBurnRestart() {
+  return prominenceburn.paused ? prominenceburn.pause() : prominenceburn.currentTime = 0;
+}
+  </script>
+  <audio id="prominenceburn" src="uploads/prominenceburn.mp4" playsinline preload="auto">
+  </audio>
+  <script> touchAvailable = false; </script>
+  <button ontouchstart="touchAvailable=true; TogglePprominenceBurn();" onclick="if(!touchAvailable) TogglePprominenceBurn();">Play/Pause</button>
+  <button ontouchstart="touchavailable=true; TogglePprominenceBurnRestart();" onclick="if(!touchAvailable) TogglePprominenceBurnRestart();">Restart</button>
+  <br>
+
+
+
+  <script>
+    function unitedstatesofsmashplay(){
+      var audio = document.getElementById("unitedstatesofsmash");
+      unitedstatesofsmash.play();
+                  }
+    function unitedstatesofsmashpause(){
+      var audio = document.getElementById("unitedstatesofsmash");
+      unitedstatesofsmash.pause();
+                  }
+    function unitedstatesofsmashrestart(){
+        var audio = document.getElementById("unitedstatesofsmash");
+        unitedstatesofsmash.pause();
+        unitedstatesofsmash.currentTime = 0
+                    }
+    </script>
+    <br>
+    <img src="uploads/unitedstatesofsmash.png" width=250 height=250 value="PLAY"  ontouchstart="touchAvailable=true; ToggleUnitedStatesOfSmash();" onclick="if(!touchAvailable) ToggleUnitedStatesOfSmash();">
+    </div>
+     <div class="column">	
+    <audio id="unitedstatesofsmash" src="uploads/unitedstatesofsmash.mp4" playsinline></audio>
+    <script>
+    var unitedstatesofsmash = document.getElementById("unitedstatesofsmash");
+    function ToggleUnitedStatesOfSmash() {
+    return unitedstatesofsmash.paused ? unitedstatesofsmash.play() : unitedstatesofsmash.pause();
+    };
+    function ToggleUnitedStatesOfSmashRestart() {
+    return unitedstatesofsmash.paused ? unitedstatesofsmash.pause() : unitedstatesofsmash.currentTime = 0;
+  }
+    </script>
+    <audio id="unitedstatesofsmash" src="uploads/unitedstatesofsmash.mp4" playsinline preload="auto">
+    </audio>
+    <script> touchAvailable = false; </script>
+    <button ontouchstart="touchAvailable=true; ToggleUnitedStatesOfSmash();" onclick="if(!touchAvailable) ToggleUnitedStatesOfSmash();">Play/Pause</button>
+    <button ontouchstart="touchavailable=true; ToggleUnitedStatesOfSmashRestart();" onclick="if(!touchAvailable) ToggleUnitedStatesOfSmashRestart();">Restart</button>
+    <br>
 {% endblock %}
 </body>
 </html>
