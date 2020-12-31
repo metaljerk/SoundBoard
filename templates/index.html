@@ -135,6 +135,41 @@ function ToggleRestartKnights() {
 
 <br>
 <!--JoJo's Bizarre Adventure-->
+<script>
+  function dioplay(){
+      var audio = document.getElementById("dio");
+      bleach.play();
+                  }
+  function diopause(){
+      var audio = document.getElementById("dio");
+      bleach.pause();
+                  }
+  function diorestart(){
+      var audio = document.getElementById("dio");
+      gutssoundtrack.pause();
+      gutssoundtrack.currentTime = 0
+                  }
+  </script>
+  <br>
+  <img src="uploads/itwasidio.jpg" width=250 height=250 value="PLAY"  ontouchstart="touchAvailable=true; ToggleDio();" onclick="if(!touchAvailable) ToggleDio();">
+  <div class="column">	
+  <audio id="itwasidio" src="uploads/itwasidio.mp4" playsinline></audio>
+   <script>
+  var bleach = document.getElementById("dio");
+  function ToggleDio() {
+    return dio.paused ? dio.play() : dio.pause();
+  };
+  function ToggleDioRestart() {
+  return dio.paused ? dio.pause() : dio.currentTime = 0;
+}
+   </script>
+   <audio id="dio" src="uploads/itwasidio.mp4" playsinline preload="auto">
+   </audio>
+   <script> touchAvailable = false; </script>
+  <button ontouchstart="touchAvailable=true; ToggleDio();" onclick="if(!touchAvailable) ToggleDio();">Play/Pause</button>
+  <button ontouchstart="touchavailable=true; ToggleDioRestart();" onclick="if(!touchAvailable) ToggleDioRestart();">Restart</button>
+
+  <br>
 <!--Berserk-->
 <script>
   function berserkfightplay(){
