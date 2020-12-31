@@ -71,6 +71,11 @@ function ToggleRestartAttack() {
       var audio = document.getElementById("attackontitanseason4");
       attackontitanseason4.pause();
                   }
+  function attackontitanseason4restart(){
+    var audio = document.getElementById("attackontitanseason4");
+    attackontitanseason4.pause();
+    attackontitanseason4.currentTime = 0
+                }              
   </script>
    <div class="column">	
   <img src="uploads/attackontitanseason4.jpg" width=250 height=250 value="PLAY"  playsinline ontouchstart="touchAvailable=true; ToggleAttackSeason4();" onclick="if(!touchAvailable) ToggleAttackSeason4();">
@@ -81,10 +86,15 @@ function ToggleRestartAttack() {
   function ToggleAttackSeason4() {
     return attackontitanseason4.paused ? attackontitanseason4.play() : attackontitanseason4.pause();
   };
+  function ToggleRestartAttackSeason4() {
+  return attackontitanseason4.paused ? attackontitanseason4.pause() : attackontitanseason4.currentTime = 0;
+}
   </script>
   <audio id="attackontitanseason4" src="uploads/attackontitanseason4.mp4" playsinline preload="auto">
   </audio>
   <button ontouchstart="touchAvailable=true; ToggleAttackSeason4();" onclick="if(!touchAvailable) ToggleAttackSeason4();">Play/Pause</button>
+  <button ontouchstart="touchavailable=true; ToggleRestartAttackSeason4();" onclick="if(!touchAvailable) ToggleRestartAttackSeason4();">Restart</button>
+
   </div>
 
 <!--Knights of Sidonia-->
@@ -97,6 +107,11 @@ function knightsofsidoniapause(){
     var audio = document.getElementById("knightsofsidonia");
     knightsofsidonia.pause();
                 }
+function knightsofsidoniarestart(){
+    var audio = document.getElementById("knightsofsidonia");
+    knightsofsidonia.pause();
+    knightsofsidonia.currentTime = 0
+                }
 </script>
 <div class="column">
 <br>
@@ -108,11 +123,16 @@ var knightsofsidonia = document.getElementById("knightsofsidonia");
 function ToggleKnights() {
   return knightsofsidonia.paused ? knightsofsidonia.play() : knightsofsidonia.pause();
 };
+function ToggleRestartKnights() {
+  return knightsofsidonia.paused ? knightsofsidonia.pause() : knightsofsidonia.currentTime = 0;
+}
  </script>
  <audio id="knightsofsidonia" src="uploads/knightsofsidonia.mp4" playsinline preload="auto">
  </audio>
  <script> touchAvailable = false; </script>
 <button ontouchstart="touchAvailable=true; ToggleKnights();" onclick="if(!touchAvailable) ToggleKnights();">Play/Pause</button>
+<button ontouchstart="touchavailable=true; ToggleRestartKnights();" onclick="if(!touchAvailable) ToggleRestartKnights();">Restart</button>
+
 <br>
 <!--JoJo's Bizarre Adventure-->
 <!--Berserk-->
@@ -125,6 +145,11 @@ function ToggleKnights() {
       var audio = document.getElementById("berserkfight");
       berserkfight.pause();
                   }
+  function berserkfightrestart(){
+    var audio = document.getElementById("berserkfight");
+    berserkfight.pause();
+    berserkfight.currentTime = 0
+                }
   </script>
   <br>
   <img src="uploads/berserkfight.jpg" width=250 height=250 value="PLAY"  ontouchstart="touchAvailable=true; ToggleBerserkFight();" onclick="if(!touchAvailable) ToggleBerserkFight();">
@@ -135,11 +160,16 @@ function ToggleKnights() {
   function ToggleBerserkFight() {
     return berserkfight.paused ? berserkfight.play() : berserkfight.pause();
   };
+  function ToggleRestartBerserkFights() {
+  return berserkfight.paused ? berserkfight.pause() : berserkfight.currentTime = 0;
+}
    </script>
    <audio id="berserkfight" src="uploads/berserkfight.mp4" playsinline preload="auto">
    </audio>
    <script> touchAvailable = false; </script>
   <button ontouchstart="touchAvailable=true; ToggleBerserkFight();" onclick="if(!touchAvailable) ToggleBerserkFight();">Play/Pause</button>
+  <button ontouchstart="touchavailable=true; ToggleRestartBerserkFights();" onclick="if(!touchAvailable) ToggleRestartBerserkFights();">Restart</button>
+
   <br>
   
   <script>
@@ -151,6 +181,11 @@ function ToggleKnights() {
         var audio = document.getElementById("gutssoundtrack");
         gutssoundtrack.pause();
                     }
+    function gutssoundtrackrestart(){
+      var audio = document.getElementById("gutssoundtrack");
+      gutssoundtrack.pause();
+      gutssoundtrack.currentTime = 0
+                  }
     </script>
     <br>
     <img src="uploads/gutssoundtrack.jpg" width=250 height=250 value="PLAY"  ontouchstart="touchAvailable=true; ToggleGutsSoundtrack();" onclick="if(!touchAvailable) ToggleGutsSoundtrack();">
@@ -161,11 +196,15 @@ function ToggleKnights() {
     function ToggleGutsSoundtrack() {
       return gutssoundtrack.paused ? gutssoundtrack.play() : gutssoundtrack.pause();
     };
+    function ToggleRestartGutsSoundtrack() {
+  return gutssoundtrack.paused ? gutssoundtrack.pause() : gutssoundtrack.currentTime = 0;
+}
      </script>
      <audio id="gutssoundtrack" src="uploads/gutssoundtrack.mp4" playsinline preload="auto">
      </audio>
      <script> touchAvailable = false; </script>
     <button ontouchstart="touchAvailable=true; ToggleGutsSoundtrack();" onclick="if(!touchAvailable) ToggleGutsSoundtrack();">Play/Pause</button>
+    <button ontouchstart="touchavailable=true; ToggleRestartGutsSoundtrack();" onclick="if(!touchAvailable) ToggleRestartGutsSoundtrack();">Restart</button>
     <br>
 <!--Bleach-->
 <script>
@@ -177,6 +216,11 @@ function ToggleKnights() {
       var audio = document.getElementById("bleach");
       bleach.pause();
                   }
+  function bleachrestart(){
+      var audio = document.getElementById("bleach");
+      gutssoundtrack.pause();
+      gutssoundtrack.currentTime = 0
+                  }
   </script>
   <br>
   <img src="uploads/bleach.png" width=250 height=250 value="PLAY"  ontouchstart="touchAvailable=true; ToggleBleach();" onclick="if(!touchAvailable) ToggleBleach();">
@@ -187,11 +231,16 @@ function ToggleKnights() {
   function ToggleBleach() {
     return bleach.paused ? bleach.play() : bleach.pause();
   };
+  function ToggleBleachRestart() {
+  return bleach.paused ? bleach.pause() : bleach.currentTime = 0;
+}
    </script>
    <audio id="bleach" src="uploads/bleachtheme.mp4" playsinline preload="auto">
    </audio>
    <script> touchAvailable = false; </script>
   <button ontouchstart="touchAvailable=true; ToggleBleach();" onclick="if(!touchAvailable) ToggleBleach();">Play/Pause</button>
+  <button ontouchstart="touchavailable=true; ToggleBleachRestart();" onclick="if(!touchAvailable) ToggleBleachRestart();">Restart</button>
+
   <br>
 <!-- Alway's Sunny -->
 <script>
@@ -203,6 +252,11 @@ function ToggleKnights() {
     var audio = document.getElementById("anothermansskin");
     anothermansskin.pause();
                 }
+  function anothermansskinrestart(){
+      var audio = document.getElementById("anothermansskin");
+      anothermansskin.pause();
+      anothermansskin.currentTime = 0
+                  }
   </script>
   <br>
   <img src="uploads/getoff.gif" width=250 height=250 value="PLAY"  ontouchstart="touchAvailable=true; ToggleGetOff();" onclick="if(!touchAvailable) ToggleGetOff();">
@@ -214,11 +268,16 @@ function ToggleKnights() {
   function ToggleGetOff() {
   return anothermansskin.paused ? anothermansskin.play() : anothermansskin.pause();
   };
+  function ToggleGetOffRestart() {
+  return anothermansskin.paused ? anothermansskin.pause() : anothermansskin.currentTime = 0;
+}
   </script>
   <audio id="anothermansskin" src="uploads/anothermansskin.mp4" playsinline preload="auto">
   </audio>
   <script> touchAvailable = false; </script>
   <button ontouchstart="touchAvailable=true; ToggleGetOff();" onclick="if(!touchAvailable) ToggleGetOff();">Play/Pause</button>
+  <button ontouchstart="touchavailable=true; ToggleGetOffRestart();" onclick="if(!touchAvailable) ToggleGetOffRestart();">Restart</button>
+
   <br>
 
 <script>
@@ -230,6 +289,11 @@ function metaljerkpause(){
     var audio = document.getElementById("metaljerk");
     metaljerk.pause();
                 }
+function metaljerkrestart(){
+      var audio = document.getElementById("metaljerk");
+      metaljerk.pause();
+      metaljerk.currentTime = 0
+                  }
 </script>
 <br>
 <img src="uploads/metaljerk.jpg" width=250 height=250 value="PLAY"  ontouchstart="touchAvailable=true; ToggleMetalJerk();" onclick="if(!touchAvailable) ToggleMetalJerk();">
@@ -241,11 +305,16 @@ var metaljerk = document.getElementById("metaljerk");
 function ToggleMetalJerk() {
   return metaljerk.paused ? metaljerk.play() : metaljerk.pause();
 };
+function ToggleMetalJerkRestart() {
+  return metaljerk.paused ? metaljerk.pause() : metaljerk.currentTime = 0;
+}
  </script>
  <audio id="metaljerk" src="uploads/metaljerk.mp4" playsinline preload="auto">
  </audio>
  <script> touchAvailable = false; </script>
 <button ontouchstart="touchAvailable=true; ToggleMetalJerk();" onclick="if(!touchAvailable) ToggleMetalJerk();">Play/Pause</button>
+<button ontouchstart="touchavailable=true; ToggleMetalJerkRestart();" onclick="if(!touchAvailable) ToggleMetalJerkRestart();">Restart</button>
+
 <br>
 {% endblock %}
 </body>
