@@ -87,7 +87,7 @@ const muteAllSongs = (cb) =>
         succ();
     })
         .then(() => cb())
-        .catch(() => console.log("Error in muting songs"));
+        .catch((error) => console.log("Error in muting songs:" + (error)));
 
 const pauseSong = (song) => (song.paused ? song.play() : song.pause());
 
