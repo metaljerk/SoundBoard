@@ -19,4 +19,4 @@ jobs:
         pip install pylint
     - name: Test with pylint
       run: |
-        pylint .
+        pylint app.py
