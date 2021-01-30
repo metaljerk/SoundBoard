@@ -8,5 +8,5 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: stefanoeb/eslint-action@1.0.2
-   - name: Run ESLint
-      run: eslint . --ext .js,.jsx,.ts,.tsx
+      - name: Run ESLint
+        run: eslint . --ext .js,.jsx,.ts,.tsx
