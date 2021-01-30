@@ -1,4 +1,4 @@
-name: Lint
+name: ESLint
 
 on: [push]
 
@@ -8,5 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: stefanoeb/eslint-action@1.0.2
+      - name: Install dependencies
+        run: |
+          npm install eslint
       - name: Run ESLint
-        run: eslint . --ext .js,.jsx,.ts,.tsx
+        run: eslint . --ext .js
