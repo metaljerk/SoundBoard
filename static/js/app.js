@@ -74,7 +74,7 @@ appendToTag.innerHTML = soundBoard.map(
         <br>
         <br>
         `
-);
+).join(''); //This join is needed to prevent commas from appearing from the soundboard list
 
 document.addEventListener('play', function(e){
     var audios = document.getElementsByTagName('audio');
