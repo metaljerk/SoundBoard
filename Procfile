@@ -1,1 +1,1 @@
-web: gunicorn soundboard.wsgi
+web: gunicorn soundboard:wsgi
