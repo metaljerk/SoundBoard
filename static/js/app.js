@@ -59,6 +59,11 @@ const soundBoard = [
         audio: "static/unitedstatesofsmash.mp4",
         name: "unitedstatesofsmash"
     },
+    {
+        img: "static/ururukillyou.jpg",
+        audio: "static/ururukillyou.mp4",
+        name: "ururukillyou"
+    }
 ];
 
 const appendToTag = document.getElementById("content");
