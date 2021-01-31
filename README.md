@@ -5,9 +5,16 @@ Check it out! https://soundsboard.herokuapp.com/
 
 To run locally: 
 
-cd / soundboard 
+```bash
+cd /soundboard 
 docker-compose up -d 
+```
 
 or
 
+```bash
+cd /soundboard 
+pip install -r requirements.txt
 gunicorn soundboard.wsgi
+```
+
