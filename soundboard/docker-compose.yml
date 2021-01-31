@@ -18,8 +18,10 @@ services:
     - backend
     
   webserver:
+    build: 
+      context: .
+      dockerfile: ./nginx/dockerfile
     restart: always
-    build: ./nginx
     container_name: webserver
     ports:
       - "80:80"
