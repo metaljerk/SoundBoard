@@ -13,6 +13,7 @@ docker-compose up -d
 or
 
 ```bash
+cd /soundboard 
 pip install -r requirements.txt
 gunicorn soundboard.wsgi
 ```
