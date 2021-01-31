@@ -1,0 +1,7 @@
+FROM python:3.8-slim-buster 
+COPY requirements.txt /
+RUN pip install -r /requirements.txt
+COPY . /soundboard
+WORKDIR /soundboard
+EXPOSE 8000
+CMD ["gunicorn", "-b", "0.0.0.0:8000", "-w 5", "wsgi:app"]

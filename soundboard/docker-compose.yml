@@ -1,0 +1,34 @@
+version: '2.2'
+
+services:
+
+  soundboard:
+    build: .
+    restart: always
+    container_name: soundboard
+    command: 
+     - gunicorn 
+     - -b 
+     - 0.0.0.0:8000 
+     - -w 5
+     - soundboard.wsgi
+     - --timeout 30
+    scale: 1
+    networks:
+    - backend
+    
+  webserver:
+    restart: always
+    build: ./nginx
+    container_name: webserver
+    ports:
+      - "80:80"
+    networks:
+    - backend
+  
+networks:
+  backend:
+    driver: bridge
+
+
+  
