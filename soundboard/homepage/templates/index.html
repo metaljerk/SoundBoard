@@ -2,17 +2,6 @@
 <!doctype html>
 {% extends 'base.html' %}
 {% block content %}
-{% with messages = get_flashed_messages() %}
-{% if messages %}
-    {% for message in messages %}
-        <div class="alert alert-primary alert-dismissible fade show" role="alert">
-            <span>{{ message }}</span>
-            <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-    {% endfor %}
-{% endif %}
-{% endwith %}
 <body>
 <!-- I'll worry about this later
 <title>Upload new File</title>
@@ -25,6 +14,7 @@
 <div>
 <br>
 <div id="content"></div>
+{% load static %}
 
 
 <script src="../static/js/app.js"></script>
