@@ -1,62 +1,62 @@
 const soundBoard = [
     {
-        img: "uploads/attackontitan.jpg",
-        audio: "uploads/attackontitan.mp4",
+        img: "static/attackontitan.jpg",
+        audio: "static/attackontitan.mp4",
         name: "attackOnTitan"
     },
     {
-        img: "uploads/attackontitanseason4.jpg",
-        audio: "uploads/attackontitanseason4.mp4",
+        img: "static/attackontitanseason4.jpg",
+        audio: "static/attackontitanseason4.mp4",
         name: "attackOnTitanSeason4"
     },
     {
-        img: "uploads/knightsofsidonia.jpg",
-        audio: "uploads/knightsofsidonia.mp4",
+        img: "static/knightsofsidonia.jpg",
+        audio: "static/knightsofsidonia.mp4",
         name: "knightsofsidonia"
     },
     {
-        img: "uploads/itwasidio.jpg",
-        audio: "uploads/itwasidio.mp4",
+        img: "static/itwasidio.jpg",
+        audio: "static/itwasidio.mp4",
         name: "dio"
     },
     {
-        img: "uploads/berserkfight.jpg",
-        audio: "uploads/berserkfight.mp4",
+        img: "static/berserkfight.jpg",
+        audio: "static/berserkfight.mp4",
         name: "berserkfight",
     },
     {
-        img: "uploads/gutssoundtrack.jpg",
-        audio: "uploads/gutssoundtrack.mp4",
+        img: "static/gutssoundtrack.jpg",
+        audio: "static/gutssoundtrack.mp4",
         name: "gutssoundtrack"
     },
     {
-        img: "uploads/bleach.png",
-        audio: "uploads/bleachtheme.mp4",
+        img: "static/bleach.png",
+        audio: "static/bleachtheme.mp4",
         name: "bleach"
     },
     {
-        img: "uploads/bleachhoahoh.jpg",
-        audio: "uploads/bleachhoahoh.mp4",
+        img: "static/bleachhoahoh.jpg",
+        audio: "static/bleachhoahoh.mp4",
         name: "bleachhoahoh"
     },
     {
-        img: "uploads/getoff.gif",
-        audio: "uploads/anothermansskin.mp4",
+        img: "static/getoff.gif",
+        audio: "static/anothermansskin.mp4",
         name: "anothermansskin"
     },
     {
-        img: "uploads/metaljerk.jpg",
-        audio: "uploads/metaljerk.mp4",
+        img: "static/metaljerk.jpg",
+        audio: "static/metaljerk.mp4",
         name: "metaljerk"
     },
     {
-        img: "uploads/prominenceburn.jpg",
-        audio: "uploads/prominenceburn.mp4",
+        img: "static/prominenceburn.jpg",
+        audio: "static/prominenceburn.mp4",
         name: "prominenceburn"
     },
     {
-        img: "uploads/unitedstatesofsmash.png",
-        audio: "uploads/unitedstatesofsmash.mp4",
+        img: "static/unitedstatesofsmash.png",
+        audio: "static/unitedstatesofsmash.mp4",
         name: "unitedstatesofsmash"
     },
 ];
