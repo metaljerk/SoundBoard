@@ -20,6 +20,11 @@ const soundBoard = [
         name: "dio"
     },
     {
+        img: "static/youutterfool.jpg",
+        audio: "static/youutterfool.mp4",
+        name: "youutterfool"
+    },
+    {
         img: "static/berserkfight.jpg",
         audio: "static/berserkfight.mp4",
         name: "berserkfight",
