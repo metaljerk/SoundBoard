@@ -30,6 +30,11 @@ const soundBoard = [
         name: "youutterfool"
     },
     {
+        img: "static/heybaby.png",
+        audio: "static/heybaby.mp4",
+        name: "heybaby"
+    },
+    {
         img: "static/berserkfight.jpg",
         audio: "static/berserkfight.mp4",
         name: "berserkfight",
