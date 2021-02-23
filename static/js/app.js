@@ -55,6 +55,11 @@ const soundBoard = [
         name: "bleachhoahoh"
     },
     {
+        img: "static/ururukillyou.jpg",
+        audio: "static/ururukillyou.mp4",
+        name: "ururukillyou"
+    },
+    {
         img: "static/getoff.gif",
         audio: "static/anothermansskin.mp4",
         name: "anothermansskin"
@@ -73,11 +78,6 @@ const soundBoard = [
         img: "static/unitedstatesofsmash.png",
         audio: "static/unitedstatesofsmash.mp4",
         name: "unitedstatesofsmash"
-    },
-    {
-        img: "static/ururukillyou.jpg",
-        audio: "static/ururukillyou.mp4",
-        name: "ururukillyou"
     }
 ];
 
