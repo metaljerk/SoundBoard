@@ -35,6 +35,11 @@ const soundBoard = [
         name: "heybaby"
     },
     {
+        img: "static/ohthatsabaseball.png",
+        audio: "static/ohthatsabaseball.mp4",
+        name: "ohthatsabaseball"
+    },
+    {
         img: "static/berserkfight.jpg",
         audio: "static/berserkfight.mp4",
         name: "berserkfight",
